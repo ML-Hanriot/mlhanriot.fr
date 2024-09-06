@@ -1,0 +1,185 @@
+/* Site non responsive, à implémenter après le cours correspondant 
+Ne répond pas bien au resize de la page, à visionner en plein écran*/
+
+* {
+	font-family: alice, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+/**********************************Header*************************************/
+header img {
+	width: 30%;
+	display: block;
+	margin: auto;
+}
+
+header p {
+	text-align: center;
+	color: #218edd;
+	font-size: 1.5rem;
+}
+
+/********************************Nav*****************************************/
+/* A améliorer dans le html */
+.nav-container {
+	background-color: #90c1e5;
+	padding: 18px 0;
+	margin-top: 70px;
+}
+
+.nav-around {
+	margin-top: -79px;
+	padding: 50px 0;
+	background-color: rgba(12, 113, 195, 0.208);
+}
+
+.nav-container a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.729);
+	font-size: 1.2rem;
+}
+
+.nav-container a:hover {
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	padding-left: 400px;
+	padding-right: 400px;
+}
+
+/**************************************Grid affiches*******************************/
+.grid-affiches img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.grid-affiches {
+	margin-top: 70px;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 30px;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 70px;
+}
+
+.lien-affiche {
+	position: relative;
+}
+
+.text-overlay-movie,
+.text-overlay-series {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+	border-radius: 10px;
+}
+
+/* Peut être amélioré? */
+.lien-affiche:hover .text-overlay-movie,
+.lien-affiche:hover .text-overlay-series {
+	display: flex;
+}
+
+a img {
+	border-radius: 10px;
+	box-shadow: 12px 12px 24px black;
+}
+
+.badge-serie,
+.badge-film {
+	position: absolute;
+	top: 87%;
+	left: 72%;
+	color: white;
+	font-size: 1rem;
+	background-color: rgba(33, 142, 221, 0.3);
+	padding: 5px;
+	border-radius: 12px;
+}
+
+/* Peut être amélioré? */
+.lien-affiche:hover .badge-film,
+.lien-affiche:hover .badge-serie {
+	display: none;
+}
+
+/*********************************Pages de films*******************************/
+h1 {
+	text-transform: capitalize;
+	font-size: 250%;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	background-color: rgba(104, 106, 132, 0.211);
+	padding: 50px;
+	color: #ffffff;
+	text-shadow: rgba(0, 0, 0, 0.693) 6px 6px 6px;
+}
+
+.section-affiche-resume {
+	width: 70%;
+	margin: auto;
+	display: grid;
+	gap: 50px;
+	padding: 50px 50px;
+	margin-top: -100px;
+	background-color: rgba(108, 110, 131, 0.137);
+}
+
+.affiche {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 6;
+	box-shadow: black 6px 6px 12px;
+}
+
+.infos {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	color: #218edd;
+}
+
+.resume {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.source {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: small;
+}
+
+/***************************Footer*************************************/
+footer {
+	background-color: black;
+	padding: 50px 0;
+	color: white;
+}
+
+small {
+	display: block;
+	text-align: center;
+}

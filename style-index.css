@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Linear+A&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Noto Sans Linear A", sans-serif;
+	/* background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%); */
+	/* background-repeat: no-repeat; */
+	background-image: url("/img/background-image.jpg");
+	/* background-color: #b6b5a6; */
+	height: 100%;
+}
+
+.disclaimer {
+	color: #bbadad;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-left {
+	width: 50%;
+	padding: 100px;
+}
+
+.introduction-title,
+.introduction,
+.description {
+	color: rgba(32, 30, 30, 0.801);
+	text-align: center;
+}
+
+.introduction-title {
+	font-size: 3rem;
+}
+
+.introduction {
+	margin-top: 20px;
+	font-size: 1rem;
+}
+
+.description {
+	margin-top: 40px;
+	font-size: 1rem;
+	text-align: justify;
+}
+
+.my-projects h3 {
+	color: rgba(32, 30, 30, 0.801);
+	text-align: center;
+	font-size: 2.2rem;
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+
+.projects {
+	display: flex;
+}
+
+#capture-1 {
+	margin-left: 20px;
+	max-width: 80%;
+	border-radius: 10px;
+	box-shadow: -4px 8px 5px -2px #dedfdd;
+}
+
+#capture-2 {
+	max-width: 100%;
+	margin-top: 15px;
+	border-radius: 10px;
+	box-shadow: -4px 8px 5px -2px #dedfdd;
+}
+
+.header-right {
+	width: 50%;
+}
+
+.header-right img {
+	width: 60%;
+	margin-left: 140px;
+	margin-top: 50px;
+	box-shadow: -4px 8px 5px -2px #dedfdd;
+	border-radius: 5px;
+}
+
+.download {
+	margin-left: 21rem;
+	margin-top: 20px;
+}
+
+.download a {
+	font-family: "Noto Sans Linear A", sans-serif;
+	font-weight: bold;
+	color: rgb(51, 51, 50);
+	font-size: small;
+}
+
+footer {
+	height: 70px;
+	background-color: #ffffff;
+}
+
+.social-links {
+	text-align: center;
+}
+
+@media screen and (max-width: 1279px) {
+	.introduction-title {
+		font-size: 2.5rem;
+	}
+
+	.introduction-title,
+	.introduction,
+	.description {
+		margin-top: 50px;
+	}
+
+	.my-projects {
+		margin-top: 270px;
+		width: 200%;
+	}
+
+	.header-right img {
+		width: 500px;
+		margin-left: 70px;
+		margin-top: 30px;
+	}
+}
