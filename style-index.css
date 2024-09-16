@@ -7,11 +7,11 @@
 
 body {
 	font-family: "Noto Sans Linear A", sans-serif;
-	/* background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%); */
-	/* background-repeat: no-repeat; */
 	background-image: url("/img/background-image.jpg");
-	/* background-color: #b6b5a6; */
-	height: 100%;
+	object-fit: none;
+	/*background-repeat: no-repeat;*/
+	/*width: auto;*/
+	/*background-size: auto;*/
 }
 
 .disclaimer {
